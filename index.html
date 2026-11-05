@@ -8,7 +8,7 @@
 </head>
 <body>
   <main>
-    <h1>Hello from GitHub Pages 👋</h1>
+    <h1>🍂 Happy Autumn from GitHub Pages 🍁</h1>
     <p>This page is served straight from the <code>main</code> branch of this repository.</p>
 
     <section>
@@ -39,6 +39,19 @@
       btn.textContent = `Clicked ${count} time${count === 1 ? '' : 's'}`;
     });
     document.getElementById('loaded').textContent = new Date().toLocaleString();
+
+    // Falling leaves
+    const leaves = ['🍂', '🍁', '🍃'];
+    for (let i = 0; i < 15; i++) {
+      const leaf = document.createElement('span');
+      leaf.className = 'leaf';
+      leaf.textContent = leaves[i % leaves.length];
+      leaf.style.left = Math.random() * 100 + 'vw';
+      leaf.style.fontSize = (1 + Math.random() * 1.5) + 'rem';
+      leaf.style.animationDuration = (8 + Math.random() * 10) + 's';
+      leaf.style.animationDelay = (-Math.random() * 18) + 's';
+      document.body.appendChild(leaf);
+    }
   </script>
 </body>
 </html>
