@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GitHub Pages Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Hello from GitHub Pages 👋</h1>
+    <p>This page is served straight from the <code>main</code> branch of this repository.</p>
+
+    <section>
+      <h2>How it works</h2>
+      <ol>
+        <li>Push an <code>index.html</code> to the repo.</li>
+        <li>In <strong>Settings → Pages</strong>, choose <em>Deploy from a branch</em> → <code>main</code> / <code>(root)</code>.</li>
+        <li>Visit <code>https://&lt;user&gt;.github.io/&lt;repo&gt;/</code>.</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>A little JavaScript</h2>
+      <p>Static pages can still be interactive:</p>
+      <button id="counter">Clicked 0 times</button>
+    </section>
+
+    <footer>
+      <p>Last loaded: <span id="loaded"></span></p>
+    </footer>
+  </main>
+
+  <script>
+    let count = 0;
+    const btn = document.getElementById('counter');
+    btn.addEventListener('click', () => {
+      count++;
+      btn.textContent = `Clicked ${count} time${count === 1 ? '' : 's'}`;
+    });
+    document.getElementById('loaded').textContent = new Date().toLocaleString();
+  </script>
+</body>
+</html>
