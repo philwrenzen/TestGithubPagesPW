@@ -2,6 +2,8 @@
 
 A minimal static site demonstrating GitHub Pages.
 
+**Live site:** https://philwrenzen.github.io/TestGithubPagesPW/
+
 ## Files
 
 - `index.html` – the page
@@ -12,7 +14,7 @@ A minimal static site demonstrating GitHub Pages.
 1. Push to GitHub.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to *Deploy from a branch*, then pick `main` and `/ (root)`.
-4. After a minute or so the site is live at `https://<user>.github.io/TestGithubPagesPW/`.
+4. After a minute or so the site is live at https://philwrenzen.github.io/TestGithubPagesPW/. Every push to `main` redeploys it automatically.
 
 ## Running locally
 
